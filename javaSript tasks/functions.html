@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- used to perfoem certain tasks 
+     2 types of functions
+     BASED ON PARAMETERS
+     1.Non-parameterised:do not take the inpiut while being called
+     2.parameterized:the take input while being called
+     BASED ON NOMENCLATURE
+     1.Named functions:they do not have function name and declared using function keyword
+     eg: let 
+     2.-->
+     <script>
+        //parametraized named function
+        function add(a,b){
+        let sum=a+b;
+        console.log(sum);
+    }
+    add(20,40);
+    // parametraized anonymous function
+    let sumfunc=function(x,y){
+        let sum=x+y;
+        console.log(sum);
+    };
+    sumfunc(30,60);
+
+    //non-parametraized arrow function
+    let square=()=>{
+        let num=20;
+        let sq=num*num;
+        console.log(sq);
+    };
+    square();
+    //parametraized arrow function
+    let division=(a,b)=>{
+        let div=a/b;
+        console.log(div);
+    }
+    division(25,5);
+    let hw=(name)=>{
+        console.log("hello world");
+        console.log(name);
+
+    };
+    hw("suhas");
+
+
+
+    debugger;
+    function A(){
+        console.log("this an function a");
+    }
+    A(); 
+    //THE FUNCTIONS WILL REPRENT IN GLOBAL ACTION
+    var Aa=()=>{
+        console.log("this is a function aa");
+        let aabb=10;
+        console.log(aabb);//aabb is a local to the this block Aa ,so ypou cant acces it outside
+    }
+    Aa();
+ 
+    // the scope of an arrow function depends on the scope of the variables
+     </script>
+</body>
+</html>

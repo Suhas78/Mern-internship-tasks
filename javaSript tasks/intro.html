@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+    <!-- // internal scripting
+    // let,var,const
+    let name="suhas";
+    console.log(name);
+    document.write(name+ "<br>");
+    //   alert(name); it display pop up
+
+    //  name="Joy"
+    //  document.write(name);
+    const age=24;
+    document.write(age+"<br>");
+
+// data types in java script
+// the difference betwwen var and let is explained in hoisting topicS
+let namee ="javasciprt"
+console.log(typeof namee);
+let arr=[1,2,3,4,5];
+console.log(typeof arr); -->
+
+    <!-- variables(let,var,const) and
+      data types (string ,number,object,boolean)-->
+      <!-- objects: are real time entities which carries properties -->
+       <script>
+        // let mycar=new car();
+        let person1={
+            // assiagning multiple properties to a single variables 
+            name:"suhas joy",
+            age: 19,
+            gender:"male",
+    
+        };
+        document.write(person1.name+"<br>");
+        document.write(person1["age"]+"<br>");
+
+
+        // looping statements:to execute the set of statements mutiple times 
+        //just like in java(while ,for,do while)
+        // syntax : 
+            // <!--initilization
+            //     while(condition){
+            //     statements to execute
+            //     update statements
+        
+            // }-->
+//dry principle:it means that do not repeat your self 
+            document.write("suhas"+"<br>");
+            let i=1;
+            while(i<=4){
+                console.log("suhas");
+                console.log("helloo");
+                i++
+            }
+
+            // print even number between 1 to 10
+            for(let i=10;i>0;i--){
+                if(i % 2 == 0){
+                    console.log(i);
+                }
+            }
+            console.log(2==2);
+            console.log(2=="2");
+            console.log(2==="2");
+            // === checks data tye also and == checks only values
+            //sum of 20 natural umbers
+            let sum=0;
+            for(let i=1;i<=10;i++){
+                sum=sum+i;
+                
+            }
+            console.log(sum);
+            // wap to print prime number 1 to 20
+            // wap to check whewather the number is prime or not
+            // find the factorial of the number
+            // conditional staements:used to make decisions
+            //1.if staements
+            //2.if-else statements
+            //3.else-if ladder
+            //syntax:if(condition){statements}elseif(condition){statements}else{statements}
+
+            // switch case
+            // syntax:switch(input){
+        //          case value1 : {
+        //             statements
+        //          }break;
+        // }
+
+
+        // functions
+       function  print(){
+        console.log("hello this is my function");
+       }
+       print();//function call statement
+// camelCase-used by convention not Pascalcase
+       </script>
+</body>
+</html>
